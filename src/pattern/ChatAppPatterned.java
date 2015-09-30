@@ -107,7 +107,7 @@ public class ChatAppPatterned {
 	public static void main(String[] args) {
 
 		// 以下の書き方はコンパイルエラーとなる
-		// UserConfig config = new UserConfig();
+		// SingletonUserConfig config = new SingletonUserConfig();
 
 		// シングルトンの場合はstaticメソッドを使ってインスタンスを取得
 		SingletonUserConfig config = SingletonUserConfig.getInstance();

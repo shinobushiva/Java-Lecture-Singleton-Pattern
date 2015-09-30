@@ -25,7 +25,7 @@ public class ChatAppNoPattern {
 
 	public ChatAppNoPattern(NormalUserConfig config) {
 
-		// 引数として受け取ったUserConfigのインスタンスを保持
+		// 引数として受け取ったNormalUserConfigのインスタンスを保持
 		this.config = config;
 
 		frame = new JFrame(getClass().getName());
@@ -70,7 +70,7 @@ public class ChatAppNoPattern {
 				// コンフィグを取得 [ここがバグになる]
 				NormalUserConfig config = new NormalUserConfig();
 				// 正しくは以下のように書かないといけない
-				// UserConfig config = this.config;
+				// NormalUserConfig config = this.config;
 
 				// （モーダル）ダイアログの作成と表示
 				JDialog dialog = new JDialog();
