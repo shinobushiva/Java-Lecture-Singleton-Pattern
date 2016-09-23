@@ -23,7 +23,7 @@ public class SingletonKeystore {
 	public String getKey(String siteName) {
 		// キーが登録されていない場合は実行時例外
 		if (!keys.containsKey(siteName)) {
-			new RuntimeException("No key found for  : " + siteName);
+			throw new RuntimeException("No key found for  : " + siteName);
 		}
 
 		return keys.get(siteName);
